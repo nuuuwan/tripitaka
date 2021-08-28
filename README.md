@@ -8,3 +8,4 @@
   * Added Patika Vagga
   * Stub for parse
   * Added Digha and Majjima Nikaya
+  * Moved py code to src; Removed tmp
