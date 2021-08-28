@@ -7,3 +7,4 @@
   * Added Silakkhandha and Maha Vaggas
   * Added Patika Vagga
   * Stub for parse
+  * Added Digha and Majjima Nikaya

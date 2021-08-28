@@ -1,10 +1,12 @@
 from utils import jsonx
+
 METADATA_FILE = 'data/metadata.json'
 
 
 def store_metadata(metadata):
     store_file = METADATA_FILE.replace('.json', '.formatted.json')
     jsonx.write(store_file, metadata)
+
 
 def load_metadata():
     return jsonx.read(METADATA_FILE)
