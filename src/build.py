@@ -112,7 +112,7 @@ def build():
                 )
 
             nikaya_summary_file = f'{dir_nikaya}/README.md'
-            filex.write(nikaya_summary_file, '\n'.join(nikaya_lines))
+            filex.write(nikaya_summary_file, '\n\n'.join(nikaya_lines))
         pitaka_summary_file = f'{dir_pitaka}/README.md'
         filex.write(pitaka_summary_file, '\n'.join(pitaka_lines))
     tripitaka_summary_file = 'docs/README.md'
