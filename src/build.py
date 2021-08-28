@@ -85,7 +85,7 @@ def build():
                     f'*  {sutta_id} - [{sutta_name}](./{file_sutta_only})',
                 )
                 pitaka_lines.append(
-                    f'  *  {sutta_id} - [{sutta_name}](./{file_sutta_only})',
+                    f'  *  {sutta_id} - [{sutta_name}](./{dir_nikaya_only}/{file_sutta_only})',
                 )
 
             filex.write(nikaya_summary_file, '\n'.join(nikaya_lines))
