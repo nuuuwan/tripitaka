@@ -4,12 +4,12 @@ Source: [https://www.accesstoinsight.org/tipitaka](https://www.accesstoinsight.o
 Tripiṭaka (Sanskrit: [trɪˈpɪʈɐkɐ]) or Tipiṭaka (Pali: [tɪˈpɪʈɐkɐ]) meaning "Triple Basket" is the traditional term for ancient collections of Buddhist scriptures.
 ## Pitakas, Nikayas & Suttas
 *  1 - [Vinaya Pitaka](./1-vinaya-pitaka)
-    *  1.1 - [Suttavibhanga](./1-vinaya-pitaka/1.1-suttavibhanga)
-    *  1.2 - [Khandhaka](./1-vinaya-pitaka/1.2-khandhaka)
-    *  1.3 - [Parivara](./1-vinaya-pitaka/1.3-parivara)
+  *  1.1 - [Suttavibhanga](./1-vinaya-pitaka/1.1-suttavibhanga)
+  *  1.2 - [Khandhaka](./1-vinaya-pitaka/1.2-khandhaka)
+  *  1.3 - [Parivara](./1-vinaya-pitaka/1.3-parivara)
 *  2 - [Sutta Pitaka](./2-sutta-pitaka)
-    *  2.1 - [Digha Nikaya](./2-sutta-pitaka/2.1-digha-nikaya)
-        *  2.1.1 - [Brahmajāla Sutta](./2-sutta-pitaka/2.1-digha-nikaya/2.1.1-brahmaj-la-sutta.md)
+  *  2.1 - [Digha Nikaya](./2-sutta-pitaka/2.1-digha-nikaya)
+    *  2.1.1 - [Brahmajāla Sutta](./2-sutta-pitaka/2.1-digha-nikaya/2.1.1-brahmaj-la-sutta.md)
         *  2.1.2 - [Samaññaphala Sutta](./2-sutta-pitaka/2.1-digha-nikaya/2.1.2-sama-aphala-sutta.md)
         *  2.1.9 - [Potthapada Sutta](./2-sutta-pitaka/2.1-digha-nikaya/2.1.9-potthapada-sutta.md)
         *  2.1.11 - [Kevatta (Kevaddha) Sutta](./2-sutta-pitaka/2.1-digha-nikaya/2.1.11-kevatta-kevaddha-sutta.md)
