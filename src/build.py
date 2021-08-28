@@ -19,7 +19,7 @@ def build():
         if not pitaka_link:
             pitaka_link = DEFAULT_SOURCE
         pitaka_summary = pitaka.get('summary', '')
-        pitaka_summary_file = f'{dir_pitaka}/summary.md'
+        pitaka_summary_file = f'{dir_pitaka}/README.md'
         pitaka_lines = [
             f'# {pitaka_name}',
             '',
@@ -48,7 +48,7 @@ def build():
             if not nikaya_link:
                 pitaka_link = DEFAULT_SOURCE
             nikaya_summary = nikaya.get('summary', '')
-            nikaya_summary_file = f'{dir_nikaya}/summary.md'
+            nikaya_summary_file = f'{dir_nikaya}/README.md'
             nikaya_lines = [
                 f'# {nikaya_name}',
                 '',
