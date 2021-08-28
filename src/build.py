@@ -3,6 +3,8 @@ from utils import dt, filex
 from tripitaka.src import metadata
 
 DEFAULT_SOURCE = 'https://www.accesstoinsight.org/tipitaka'
+
+
 def build():
     _metadata = metadata.load()
     os.system('rm -rf docs; mkdir docs')
@@ -19,8 +21,6 @@ def build():
         '## Pitakas, Nikayas & Suttas',
     ]
 
-
-
     for pitaka in _metadata['pitakas']:
         pitaka_id = pitaka['id']
         pitaka_name = pitaka['name']
@@ -30,7 +30,7 @@ def build():
         os.system(f'mkdir {dir_pitaka}')
 
         tripitaka_lines.append(
-            f'*  {pitaka_id} - [{pitaka_name}](./{dir_pitaka_only})',
+            f'* [{pitaka_name}](./{dir_pitaka_only})',
         )
 
         pitaka_link = pitaka.get('link', '')
@@ -55,10 +55,10 @@ def build():
             os.system(f'mkdir {dir_nikaya}')
 
             pitaka_lines.append(
-                f'* {nikaya_id} - [{nikaya_name}](./{dir_nikaya_only})',
+                f'* [{nikaya_name}](./{dir_nikaya_only})',
             )
             tripitaka_lines.append(
-                f'    *  {nikaya_id} - [{nikaya_name}](./{dir_pitaka_only}/{dir_nikaya_only})',
+                f'    *  [{nikaya_name}](./{dir_pitaka_only}/{dir_nikaya_only})',
             )
 
             nikaya_link = nikaya.get('link', '')
@@ -84,24 +84,26 @@ def build():
                 if not sutta_link:
                     sutta_link = DEFAULT_SOURCE
                 sutta_summary = sutta['summary']
-                content = '\n'.join([
-                    f'# {sutta_name}',
-                    '',
-                    f'Source: [{sutta_link}]({sutta_link})',
-                    '',
-                    '## Summary',
-                    f'{sutta_summary}',
-                ])
+                content = '\n'.join(
+                    [
+                        f'# {sutta_name}',
+                        '',
+                        f'Source: [{sutta_link}]({sutta_link})',
+                        '',
+                        '## Summary',
+                        f'{sutta_summary}',
+                    ]
+                )
                 filex.write(file_sutta, content)
 
                 nikaya_lines.append(
-                    f'*  {sutta_id} - [{sutta_name}](./{file_sutta_only})',
+                    f'* [{sutta_name}](./{file_sutta_only})',
                 )
                 pitaka_lines.append(
-                    f'    *  {sutta_id} - [{sutta_name}](./{dir_nikaya_only}/{file_sutta_only})',
+                    f'    * [{sutta_name}](./{dir_nikaya_only}/{file_sutta_only})',
                 )
                 tripitaka_lines.append(
-                    f'        *  {sutta_id} - [{sutta_name}](./{dir_pitaka_only}/{dir_nikaya_only}/{file_sutta_only})',
+                    f'        * [{sutta_name}](./{dir_pitaka_only}/{dir_nikaya_only}/{file_sutta_only})',
                 )
 
             nikaya_summary_file = f'{dir_nikaya}/README.md'
@@ -110,8 +112,6 @@ def build():
         filex.write(pitaka_summary_file, '\n'.join(pitaka_lines))
     tripitaka_summary_file = f'docs/README.md'
     filex.write(tripitaka_summary_file, '\n'.join(tripitaka_lines))
-
-
 
 
 if __name__ == '__main__':

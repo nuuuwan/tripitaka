@@ -7,6 +7,7 @@ URL_ROOT = 'https://www.accesstoinsight.org/tipitaka/mn/'
 
 REGEX_TITLE = r'\w{1}N (?P<num_str>\d+):\s(?P<title_str>.+)\s—\s(?P<title_description_str>.+)'
 
+
 def parse(html_file, parent_id):
     html = www.read(html_file)
     soup = BeautifulSoup(html, 'html.parser')
@@ -40,9 +41,6 @@ def parse(html_file, parent_id):
         )
         suttas.append(sutta)
     print(json.dumps(suttas, indent=2))
-
-
-
 
 
 if __name__ == '__main__':
