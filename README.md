@@ -3,3 +3,4 @@
   * formatting
   * Added ids and vaggas
   * Added ids and vaggas
+  * Added Silakkhandha and Maha Vaggas

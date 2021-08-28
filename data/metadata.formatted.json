@@ -33,16 +33,82 @@
           "vaggas": [
             {
               "name": "Silakkhandha Vagga",
+              "id": "2.1.1",
               "description": "The Division Concerning Morality",
+              "suttas": [
+                {
+                  "name": "Brahmaj\u0101la Sutta",
+                  "id": "2.1.1.1",
+                  "description": "The All-embracing Net of Views. In this important sutta, the first in the Tipitaka, the Buddha describes sixty-two philosophical and speculative views concerning the self and the world that were prevalent among spiritual seekers of his day. In rejecting these teachings \u2014 many of which thrive to this day \u2014 he decisively establishes the parameters of his own."
+                },
+                {
+                  "name": "Sama\u00f1\u00f1aphala Sutta",
+                  "id": "2.1.1.2",
+                  "description": "The Fruits of the Contemplative Life. King Ajatasattu asks the Buddha, \"What are the fruits of the contemplative life, visible in the here and now?\" The Buddha replies by painting a comprehensive portrait of the Buddhist path of training, illustrating each stage of the training with vivid similes.",
+                  "link": "https://www.accesstoinsight.org/tipitaka/dn/dn.02.0.than.html"
+                },
+                {
+                  "name": "Potthapada Sutta",
+                  "id": "2.1.1.9",
+                  "description": "The wandering ascetic Potthapada brings to the Buddha a tangle of questions concerning the nature of perception. The Buddha clears up the matter by reviewing the fundamentals of concentration meditation and showing how it can lead to the ultimate cessation of perception.",
+                  "link": "https://www.accesstoinsight.org/tipitaka/dn/dn.09.0.than.html"
+                },
+                {
+                  "name": "Kevatta Sutta",
+                  "id": "2.1.1.11",
+                  "description": "This discourse explores the role of miracles and conversations with heavenly beings as a possible basis for faith and belief. The Buddha does not deny the reality of such experiences, but he points out that \u2014 of all possible miracles \u2014 the only reliable one is the miracle of instruction in the proper training of the mind. As for heavenly beings, they are subject to greed, anger, and delusion, and so the information they give \u2014 especially with regard to the miracle of instruction \u2014 is not necessarily trustworthy. Thus the only valid basis for faith is the instruction that, when followed, brings about the end of one's own mental defilements. The tale that concludes the discourse is one of the finest examples of the early Buddhist sense of humor.",
+                  "link": "https://www.accesstoinsight.org/tipitaka/dn/dn.11.0.than.html"
+                },
+                {
+                  "name": "Lohicca Sutta",
+                  "id": "2.1.1.12",
+                  "description": "A non-Buddhist poses some good questions: If Dhamma is something that one must realize for oneself, then what is the role of a teacher? Are there any teachers who don't deserve some sort of criticism? The Buddha's reply includes a sweeping summary of the entire path of practice.",
+                  "link": "https://www.accesstoinsight.org/tipitaka/dn/dn.12.0.than.html"
+                }
+              ],
               "source": "https://www.accesstoinsight.org/tipitaka/dn/index.html"
             },
             {
               "name": "Maha Vagga",
+              "id": "2.1.2",
               "description": "The Large Division",
+              "suttas": [
+                {
+                  "name": "Maha Nidana Sutta",
+                  "id": "2.1.2.2",
+                  "description": "The Great Causes Discourse. One of the most profound discourses in the Pali canon, which gives an extended treatment of the teachings of dependent co-arising (paticca samuppada) and not-self (anatta) in an outlined context of how these teachings function in practice. An explanatory preface is included.",
+                  "link": "https://www.accesstoinsight.org/tipitaka/dn/dn.15.0.than.html"
+                },
+                {
+                  "name": "Maha Parinibbana Sutta",
+                  "id": "2.1.2.3",
+                  "description": "Last Days of the Buddha/The Great Discourse on the Total Unbinding. This wide-ranging sutta, the longest one in the Pali canon, describes the events leading up to, during, and immediately following the death and final release (parinibbana) of the Buddha. This colorful narrative contains a wealth of Dhamma teachings, including the Buddha's final instructions that defined how Buddhism would be lived and practiced long after the Buddha's death \u2014 even to this day. But this sutta also depicts, in simple language, the poignant human drama that unfolds among the Buddha's many devoted followers around the time of the death of their beloved teacher.",
+                  "link": ""
+                },
+                {
+                  "name": "Maha Samaya Sutta",
+                  "id": "2.1.2.7",
+                  "description": "The Great Assembly/The Great Meeting. A large group of devas pays a visit to the Buddha. This sutta is the closest thing in the Pali canon to a \"Who's Who\" of the deva worlds, providing useful material for anyone interested in the cosmology of early Buddhism.",
+                  "link": ""
+                },
+                {
+                  "name": "Sakka Pa\u00f1ha Sutta",
+                  "id": "2.1.2.8",
+                  "description": "Sakka's Questions. Sakka, the deva-king, asks the Buddha about the sources of conflict, and about the path of practice that can bring it to an end. This discourse ends with a humorous account about Sakka's frustration in trying to learn the Dhamma from other contemplatives. It's hard to find a teacher when you're a king.",
+                  "link": "https://www.accesstoinsight.org/tipitaka/dn/dn.21.2x.than.html"
+                },
+                {
+                  "name": "Maha Satipatta Sutta",
+                  "id": "2.1.2.9",
+                  "description": "The Great Establishing of Mindfulness Discourse. This sutta sets out the full formula for the practice of establishing mindfulness, and then gives an extensive account of one phrase in the formula: what it means to remain focused on any of the four frames of reference\u2014body, feelings, mind, and mental qualities\u2014in and of itself.",
+                  "link": ""
+                }
+              ],
               "source": "https://www.accesstoinsight.org/tipitaka/dn/index.html"
             },
             {
               "name": "Patika Vagga",
+              "id": "2.1.3",
               "description": "The Patika Division",
               "source": "https://www.accesstoinsight.org/tipitaka/dn/index.html"
             }
