@@ -13,12 +13,9 @@ def build():
 
     tripitaka_lines = [
         f'# {tripitaka_name}',
-        '',
         f'Source: [{tripitaka_link}]({tripitaka_link})',
-        '',
         '## Summary',
         f'{tripitaka_summary}',
-        '',
         '## Pitakas, Nikayas & Suttas',
     ]
 
@@ -42,12 +39,9 @@ def build():
         pitaka_summary = pitaka.get('summary', '')
         pitaka_lines = [
             f'# {pitaka_name}',
-            '',
             f'Source: [{pitaka_link}]({pitaka_link})',
-            '',
             '## Summary',
             f'{pitaka_summary}',
-            '',
             '## Nikayas & Suttas',
         ]
 
@@ -73,12 +67,9 @@ def build():
             nikaya_summary = nikaya.get('summary', '')
             nikaya_lines = [
                 f'# {nikaya_name}',
-                '',
                 f'Source: [{nikaya_link}]({nikaya_link})',
-                '',
                 '## Summary',
                 f'{nikaya_summary}',
-                '',
                 '## Suttas',
             ]
 
@@ -93,7 +84,7 @@ def build():
                 if not sutta_link:
                     sutta_link = DEFAULT_SOURCE
                 sutta_summary = sutta['summary']
-                content = '\n'.join([
+                content = '\n\n'.join([
                     f'# {sutta_name}',
                     '',
                     f'Source: [{sutta_link}]({sutta_link})',
@@ -114,11 +105,11 @@ def build():
                 )
 
             nikaya_summary_file = f'{dir_nikaya}/README.md'
-            filex.write(nikaya_summary_file, '\n'.join(nikaya_lines))
+            filex.write(nikaya_summary_file, '\n\n'.join(nikaya_lines))
         pitaka_summary_file = f'{dir_pitaka}/README.md'
-        filex.write(pitaka_summary_file, '\n'.join(pitaka_lines))
+        filex.write(pitaka_summary_file, '\n\n'.join(pitaka_lines))
     tripitaka_summary_file = f'docs/README.md'
-    filex.write(tripitaka_summary_file, '\n'.join(tripitaka_lines))
+    filex.write(tripitaka_summary_file, '\n\n'.join(tripitaka_lines))
 
 
 

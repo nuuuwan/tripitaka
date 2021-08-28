@@ -15,3 +15,4 @@
   * Updated docs
   * Updated docs
   * Added Tripitaka summary
+  * Added Tripitaka summary
