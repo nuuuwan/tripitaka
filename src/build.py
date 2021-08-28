@@ -7,6 +7,23 @@ def build():
     _metadata = metadata.load()
     os.system('rm -rf docs; mkdir docs')
 
+    tripitaka_name = _metadata['name']
+    tripitaka_link = _metadata.get('link', DEFAULT_SOURCE)
+    tripitaka_summary = _metadata['summary']
+
+    tripitaka_lines = [
+        f'# {tripitaka_name}',
+        '',
+        f'Source: [{tripitaka_link}]({tripitaka_link})',
+        '',
+        '## Summary',
+        f'{tripitaka_summary}',
+        '',
+        '## Pitakas, Nikayas & Suttas',
+    ]
+
+
+
     for pitaka in _metadata['pitakas']:
         pitaka_id = pitaka['id']
         pitaka_name = pitaka['name']
@@ -15,11 +32,14 @@ def build():
         dir_pitaka = f'docs/{dir_pitaka_only}'
         os.system(f'mkdir {dir_pitaka}')
 
+        tripitaka_lines.append(
+            f'*  {pitaka_id} - [{pitaka_name}](./{dir_pitaka_only})',
+        )
+
         pitaka_link = pitaka.get('link', '')
         if not pitaka_link:
             pitaka_link = DEFAULT_SOURCE
         pitaka_summary = pitaka.get('summary', '')
-        pitaka_summary_file = f'{dir_pitaka}/README.md'
         pitaka_lines = [
             f'# {pitaka_name}',
             '',
@@ -43,12 +63,14 @@ def build():
             pitaka_lines.append(
                 f'* {nikaya_id} - [{nikaya_name}](./{dir_nikaya_only})',
             )
+            tripitaka_lines.append(
+                f'  *  {nikaya_id} - [{nikaya_name}](./{dir_pitaka_only}/{dir_nikaya_only})',
+            )
 
             nikaya_link = nikaya.get('link', '')
             if not nikaya_link:
                 pitaka_link = DEFAULT_SOURCE
             nikaya_summary = nikaya.get('summary', '')
-            nikaya_summary_file = f'{dir_nikaya}/README.md'
             nikaya_lines = [
                 f'# {nikaya_name}',
                 '',
@@ -87,10 +109,16 @@ def build():
                 pitaka_lines.append(
                     f'  *  {sutta_id} - [{sutta_name}](./{dir_nikaya_only}/{file_sutta_only})',
                 )
+                tripitaka_lines.append(
+                    f'    *  {sutta_id} - [{sutta_name}](./{dir_pitaka_only}/{dir_nikaya_only}/{file_sutta_only})',
+                )
 
+            nikaya_summary_file = f'{dir_nikaya}/README.md'
             filex.write(nikaya_summary_file, '\n'.join(nikaya_lines))
-
+        pitaka_summary_file = f'{dir_pitaka}/README.md'
         filex.write(pitaka_summary_file, '\n'.join(pitaka_lines))
+    tripitaka_summary_file = f'docs/README.md'
+    filex.write(tripitaka_summary_file, '\n'.join(tripitaka_lines))
 
 
 

@@ -1,4 +1,7 @@
 {
+  "name": "Tripitaka",
+  "id": "0",
+  "summary": "Tripiṭaka (Sanskrit: [trɪˈpɪʈɐkɐ]) or Tipiṭaka (Pali: [tɪˈpɪʈɐkɐ]) meaning \"Triple Basket\" is the traditional term for ancient collections of Buddhist scriptures.",
   "pitakas": [
     {
       "name": "Vinaya Pitaka",
