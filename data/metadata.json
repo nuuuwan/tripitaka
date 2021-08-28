@@ -33,15 +33,18 @@
           "vaggas": [
             {
               "name": "Silakkhandha Vagga",
-              "description": "The Division Concerning Morality"
+              "description": "The Division Concerning Morality",
+              "source": "https://www.accesstoinsight.org/tipitaka/dn/index.html"
             },
             {
               "name": "Maha Vagga",
-              "description": "The Large Division"
+              "description": "The Large Division",
+              "source": "https://www.accesstoinsight.org/tipitaka/dn/index.html"
             },
             {
               "name": "Patika Vagga",
-              "description": "The Patika Division"
+              "description": "The Patika Division",
+              "source": "https://www.accesstoinsight.org/tipitaka/dn/index.html"
             }
           ]
         },
@@ -109,5 +112,6 @@
         }
       ]
     }
-  ]
+  ],
+                "source": "https://en.wikipedia.org/wiki/Pāli_Canon"
 }
