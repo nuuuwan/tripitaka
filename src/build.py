@@ -58,7 +58,7 @@ def build():
                 f'* {nikaya_id} - [{nikaya_name}](./{dir_nikaya_only})',
             )
             tripitaka_lines.append(
-                f'  *  {nikaya_id} - [{nikaya_name}](./{dir_pitaka_only}/{dir_nikaya_only})',
+                f'    *  {nikaya_id} - [{nikaya_name}](./{dir_pitaka_only}/{dir_nikaya_only})',
             )
 
             nikaya_link = nikaya.get('link', '')
@@ -98,10 +98,10 @@ def build():
                     f'*  {sutta_id} - [{sutta_name}](./{file_sutta_only})',
                 )
                 pitaka_lines.append(
-                    f'  *  {sutta_id} - [{sutta_name}](./{dir_nikaya_only}/{file_sutta_only})',
+                    f'    *  {sutta_id} - [{sutta_name}](./{dir_nikaya_only}/{file_sutta_only})',
                 )
                 tripitaka_lines.append(
-                    f'    *  {sutta_id} - [{sutta_name}](./{dir_pitaka_only}/{dir_nikaya_only}/{file_sutta_only})',
+                    f'        *  {sutta_id} - [{sutta_name}](./{dir_pitaka_only}/{dir_nikaya_only}/{file_sutta_only})',
                 )
 
             nikaya_summary_file = f'{dir_nikaya}/README.md'
