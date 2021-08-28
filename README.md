@@ -11,3 +11,4 @@
   * Moved py code to src; Removed tmp
   * Added docs
   * Changed summary.md to README.md
+  * Changed summary.md to README.md - docs
