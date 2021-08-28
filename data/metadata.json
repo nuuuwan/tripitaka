@@ -1,0 +1,19 @@
+{
+    "pitakas": [
+      {
+        "name": "Vinaya Pitaka",
+        "description": "The first category, the Vinaya Pitaka, is mostly concerned with the rules of the sangha, both monks and nuns. The rules are preceded by stories telling how the Buddha came to lay them down, and followed by explanations and analysis. According to the stories, the rules were devised on an ad hoc basis as the Buddha encountered various behavioral problems or disputes among his followers.",
+        "nikayas": []
+      },
+      {
+        "name": "Sutta Pitaka",
+        "description": "The second category is the Sutta Pitaka (literally \"basket of threads\", or of \"the well spoken\"; Sanskrit: Sutra Pitaka, following the former meaning) which consists primarily of accounts of the Buddha's teachings.",
+        "nikayas": []
+      },
+      {
+        "name": "Abhidhamma Pitaka",
+        "description": "The third category, the Abhidhamma Pitaka (literally \"beyond the dhamma\", \"higher dhamma\" or \"special dhamma\", Sanskrit: Abhidharma Pitaka), is a collection of texts which give a scholastic explanation of Buddhist doctrines particularly about mind, and sometimes referred to as the \"systematic philosophy\" basket.",
+        "nikayas": []
+      }
+    ]
+}
