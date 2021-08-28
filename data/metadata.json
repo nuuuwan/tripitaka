@@ -3,33 +3,34 @@
     {
       "name": "Vinaya Pitaka",
       "id": "1",
-      "description": "The first category, the Vinaya Pitaka, is mostly concerned with the rules of the sangha, both monks and nuns. The rules are preceded by stories telling how the Buddha came to lay them down, and followed by explanations and analysis. According to the stories, the rules were devised on an ad hoc basis as the Buddha encountered various behavioral problems or disputes among his followers.",
+      "summary": "The first category, the Vinaya Pitaka, is mostly concerned with the rules of the sangha, both monks and nuns. The rules are preceded by stories telling how the Buddha came to lay them down, and followed by explanations and analysis. According to the stories, the rules were devised on an ad hoc basis as the Buddha encountered various behavioral problems or disputes among his followers.",
       "nikayas": [
         {
           "name": "Suttavibhanga",
           "id": "1.1",
-          "description": "Commentary on the Patimokkha, a basic code of rules for monks and nuns that is not as such included in the Canon. The monks' rules are dealt with first, followed by those of the nuns' rules not already covered."
+          "summary": "Commentary on the Patimokkha, a basic code of rules for monks and nuns that is not as such included in the Canon. The monks' rules are dealt with first, followed by those of the nuns' rules not already covered."
         },
         {
           "name": "Khandhaka",
           "id": "1.2",
-          "description": "Other rules grouped by topic in 22 chapters."
+          "summary": "Other rules grouped by topic in 22 chapters."
         },
         {
           "name": "Parivara",
           "id": "1.3",
-          "description": "Analysis of the rules from various points of view."
+          "summary": "Analysis of the rules from various points of view."
         }
       ]
     },
     {
       "name": "Sutta Pitaka",
-      "description": "The second category is the Sutta Pitaka (literally \"basket of threads\", or of \"the well spoken\"; Sanskrit: Sutra Pitaka, following the former meaning) which consists primarily of accounts of the Buddha's teachings.",
+            "id": "2",
+      "summary": "The second category is the Sutta Pitaka (literally \"basket of threads\", or of \"the well spoken\"; Sanskrit: Sutra Pitaka, following the former meaning) which consists primarily of accounts of the Buddha's teachings.",
       "nikayas": [
         {
           "name": "Digha Nikaya",
           "id": "2.1",
-          "description": "34 long discourses. This book was particularly intended to make converts, with its high proportion of debates and devotional material.",
+          "summary": "34 long discourses. This book was particularly intended to make converts, with its high proportion of debates and devotional material.",
           "suttas": [
             {
               "name": "Brahmaj\u0101la Sutta",
@@ -134,7 +135,7 @@
         {
           "name": "Majjhima Nikaya",
           "id": "2.2",
-          "description": "152 medium-length discourses. This book was particularly intended to give a solid grounding in the teaching to converts, with a high proportion of sermons and consultations.",
+          "summary": "152 medium-length discourses. This book was particularly intended to give a solid grounding in the teaching to converts, with a high proportion of sermons and consultations.",
           "suttas": [
             {
               "name": "Mulapariyaya Sutta",
@@ -785,59 +786,59 @@
         {
           "name": "Samyutta Nikaya",
           "id": "2.3",
-          "description": "Thousands of short discourses in fifty-odd groups by subject, person etc. This nikaya has the most detailed explanations of doctrine."
+          "summary": "Thousands of short discourses in fifty-odd groups by subject, person etc. This nikaya has the most detailed explanations of doctrine."
         },
         {
           "name": "Anguttara Nikaya",
           "id": "2.4",
-          "description": "Thousands of short discourses arranged numerically from ones to elevens. It contains more elementary teaching for ordinary people than the preceding three"
+          "summary": "Thousands of short discourses arranged numerically from ones to elevens. It contains more elementary teaching for ordinary people than the preceding three"
         },
         {
           "name": "Khuddaka Nikaya",
           "id": "2.5",
-          "description": "A miscellaneous collection of works in prose or verse"
+          "summary": "A miscellaneous collection of works in prose or verse"
         }
       ]
     },
     {
       "name": "Abhidhamma Pitaka",
       "id": "3",
-      "description": "The third category, the Abhidhamma Pitaka (literally \"beyond the dhamma\", \"higher dhamma\" or \"special dhamma\", Sanskrit: Abhidharma Pitaka), is a collection of texts which give a scholastic explanation of Buddhist doctrines particularly about mind, and sometimes referred to as the \"systematic philosophy\" basket.",
+      "summary": "The third category, the Abhidhamma Pitaka (literally \"beyond the dhamma\", \"higher dhamma\" or \"special dhamma\", Sanskrit: Abhidharma Pitaka), is a collection of texts which give a scholastic explanation of Buddhist doctrines particularly about mind, and sometimes referred to as the \"systematic philosophy\" basket.",
       "nikayas": [
         {
           "name": "Dhammasangani",
           "id": "3.1",
-          "description": "Enumeration, definition and classification of dhammas"
+          "summary": "Enumeration, definition and classification of dhammas"
         },
         {
           "name": "Vibhanga",
           "id": "3.2",
-          "description": "Analysis of 18 topics by various methods, including those of the Dhammasangani"
+          "summary": "Analysis of 18 topics by various methods, including those of the Dhammasangani"
         },
         {
           "name": "Dhatukatha",
           "id": "3.3",
-          "description": "Deals with interrelations between ideas from the previous two books"
+          "summary": "Deals with interrelations between ideas from the previous two books"
         },
         {
           "name": "Puggalapannatti",
           "id": "3.4",
-          "description": "Explanations of types of person, arranged numerically in lists from ones to tens"
+          "summary": "Explanations of types of person, arranged numerically in lists from ones to tens"
         },
         {
           "name": "Kathavatthu",
           "id": "3.5",
-          "description": "Over 200 debates on points of doctrine"
+          "summary": "Over 200 debates on points of doctrine"
         },
         {
           "name": "Yamaka",
           "id": "3.6",
-          "description": "Applies to 10 topics a procedure involving converse questions (e.g. Is X Y? Is Y X?)"
+          "summary": "Applies to 10 topics a procedure involving converse questions (e.g. Is X Y? Is Y X?)"
         },
         {
           "name": "Patthana",
           "id": "3.7",
-          "description": "Analysis of 24 types of condition"
+          "summary": "Analysis of 24 types of condition"
         }
       ]
     }
