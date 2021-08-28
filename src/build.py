@@ -58,7 +58,7 @@ def build():
                 f'* {nikaya_id} - [{nikaya_name}](./{dir_nikaya_only})',
             )
             tripitaka_lines.append(
-                f'    *  {nikaya_id} - [{nikaya_name}](./{dir_pitaka_only}/{dir_nikaya_only})',
+                f'  *  {nikaya_id} - [{nikaya_name}](./{dir_pitaka_only}/{dir_nikaya_only})',
             )
 
             nikaya_link = nikaya.get('link', '')
@@ -84,7 +84,7 @@ def build():
                 if not sutta_link:
                     sutta_link = DEFAULT_SOURCE
                 sutta_summary = sutta['summary']
-                content = '\n\n'.join([
+                content = '\n'.join([
                     f'# {sutta_name}',
                     '',
                     f'Source: [{sutta_link}]({sutta_link})',
@@ -98,18 +98,18 @@ def build():
                     f'*  {sutta_id} - [{sutta_name}](./{file_sutta_only})',
                 )
                 pitaka_lines.append(
-                    f'    *  {sutta_id} - [{sutta_name}](./{dir_nikaya_only}/{file_sutta_only})',
+                    f'  *  {sutta_id} - [{sutta_name}](./{dir_nikaya_only}/{file_sutta_only})',
                 )
                 tripitaka_lines.append(
-                    f'        *  {sutta_id} - [{sutta_name}](./{dir_pitaka_only}/{dir_nikaya_only}/{file_sutta_only})',
+                    f'    *  {sutta_id} - [{sutta_name}](./{dir_pitaka_only}/{dir_nikaya_only}/{file_sutta_only})',
                 )
 
             nikaya_summary_file = f'{dir_nikaya}/README.md'
-            filex.write(nikaya_summary_file, '\n\n'.join(nikaya_lines))
+            filex.write(nikaya_summary_file, '\n'.join(nikaya_lines))
         pitaka_summary_file = f'{dir_pitaka}/README.md'
-        filex.write(pitaka_summary_file, '\n\n'.join(pitaka_lines))
+        filex.write(pitaka_summary_file, '\n'.join(pitaka_lines))
     tripitaka_summary_file = f'docs/README.md'
-    filex.write(tripitaka_summary_file, '\n\n'.join(tripitaka_lines))
+    filex.write(tripitaka_summary_file, '\n'.join(tripitaka_lines))
 
 
 
