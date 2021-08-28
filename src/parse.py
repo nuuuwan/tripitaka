@@ -2,14 +2,52 @@ import re
 import json
 from bs4 import BeautifulSoup
 from utils import www
+from utils.cache import cache
 
 URL_ROOT = 'https://www.accesstoinsight.org/tipitaka/mn/'
 
 REGEX_TITLE = r'\w{1}N (?P<num_str>\d+):\s(?P<title_str>.+)\s—\s(?P<title_description_str>.+)'
 
 
-def parse(html_file, parent_id):
-    html = www.read(html_file)
+@cache('tripitaka', 86400)
+def parse_sutta(html_url):
+    html = www.read(html_url)
+    soup = BeautifulSoup(html, 'html.parser')
+
+    div_preface = soup.find('div', class_="preface")
+    preface_lines = []
+    if div_preface:
+        preface_lines = list(
+            filter(
+                lambda line: len(line.strip()) > 0,
+                div_preface.text.split('\n'),
+            )
+        )
+
+    div_chapter = soup.find('div', class_="chapter")
+    chapter_lines = []
+    if div_chapter:
+        chapter_lines = list(
+            filter(
+                lambda line: len(line.strip()) > 0,
+                div_chapter.text.split('\n'),
+            )
+        )
+
+    div_author = soup.find('div', {'id': 'H_docAuthor'})
+    author = ''
+    if div_author:
+        author = div_author.text
+
+    return {
+        'author': author,
+        'preface_lines': preface_lines,
+        'chapter_lines': chapter_lines,
+    }
+
+
+def parse_metadata(html_url, parent_id):
+    html = www.read(html_url)
     soup = BeautifulSoup(html, 'html.parser')
 
     ul_suttas = soup.find('ul', class_="suttaList")
@@ -44,7 +82,12 @@ def parse(html_file, parent_id):
 
 
 if __name__ == '__main__':
-    parse(
-        'https://www.accesstoinsight.org/tipitaka/dn/index.html',
-        '2.1',
+    # parse_metadata(
+    #     'https://www.accesstoinsight.org/tipitaka/dn/index.html',
+    #     '2.1',
+    # )
+    print(
+        parse_sutta(
+            'https://www.accesstoinsight.org/tipitaka/dn/dn.02.0.than.html'
+        )
     )
