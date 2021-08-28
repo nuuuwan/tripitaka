@@ -1,173 +1,87 @@
 # Majjhima Nikaya
-
 ## Summary
-
 152 medium-length discourses. This book was particularly intended to give a solid grounding in the teaching to converts, with a high proportion of sermons and consultations.
-
 ## Suttas
-
 * [Mulapariyaya Sutta](./2.2.1-mulapariyaya-sutta.md)
-
 * [Bhaya-bherava Sutta](./2.2.4-bhaya-bherava-sutta.md)
-
 * [Anaṅgaṇa Sutta](./2.2.5-ana-ga-a-sutta.md)
-
 * [Ākaṅkheyya Sutta](./2.2.6--ka-kheyya-sutta.md)
-
 * [Vatthupama Sutta](./2.2.7-vatthupama-sutta.md)
-
 * [Sallekha Sutta](./2.2.8-sallekha-sutta.md)
-
 * [Satipatthana Sutta](./2.2.10-satipatthana-sutta.md)
-
 * [Cula-sihanada Sutta](./2.2.11-cula-sihanada-sutta.md)
-
 * [Maha-sihanada Sutta](./2.2.12-maha-sihanada-sutta.md)
-
 * [Maha-dukkhakkhandha Sutta](./2.2.13-maha-dukkhakkhandha-sutta.md)
-
 * [Cula-dukkhakkhandha Sutta](./2.2.14-cula-dukkhakkhandha-sutta.md)
-
 * [Madhupindika Sutta](./2.2.18-madhupindika-sutta.md)
-
 * [Dvedhavitakka Sutta](./2.2.19-dvedhavitakka-sutta.md)
-
 * [Vitakkasanthana Sutta](./2.2.20-vitakkasanthana-sutta.md)
-
 * [Kakacupama Sutta](./2.2.21-kakacupama-sutta.md)
-
 * [Ratha-vinita Sutta](./2.2.24-ratha-vinita-sutta.md)
-
 * [Ariyapariyesana Sutta](./2.2.26-ariyapariyesana-sutta.md)
-
 * [Cula-hatthipadopama Sutta](./2.2.27-cula-hatthipadopama-sutta.md)
-
 * [Maha-hatthipadopama Sutta](./2.2.28-maha-hatthipadopama-sutta.md)
-
 * [Maha Saropama Sutta](./2.2.29-maha-saropama-sutta.md)
-
 * [Cula Saropama Sutta](./2.2.30-cula-saropama-sutta.md)
-
 * [Maha-gopalaka Sutta](./2.2.33-maha-gopalaka-sutta.md)
-
 * [Culagopalika Sutta](./2.2.34-culagopalika-sutta.md)
-
 * [Cula-Saccaka Sutta](./2.2.35-cula-saccaka-sutta.md)
-
 * [Maha-Saccaka Sutta](./2.2.36-maha-saccaka-sutta.md)
-
 * [Mahatanhasankhaya Sutta](./2.2.38-mahatanhasankhaya-sutta.md)
-
 * [Maha-Assapura Sutta](./2.2.39-maha-assapura-sutta.md)
-
 * [Mahavedalla Sutta](./2.2.43-mahavedalla-sutta.md)
-
 * [Culavedalla Sutta](./2.2.44-culavedalla-sutta.md)
-
 * [Cula-dhammasamadana Sutta](./2.2.45-cula-dhammasamadana-sutta.md)
-
 * [Kosambiyā Sutta](./2.2.48-kosambiy-sutta.md)
-
 * [Brahma-nimantanika Sutta](./2.2.49-brahma-nimantanika-sutta.md)
-
 * [Atthakanagara Sutta](./2.2.52-atthakanagara-sutta.md)
-
 * [Sekha-patipada Sutta](./2.2.53-sekha-patipada-sutta.md)
-
 * [Potaliya Sutta](./2.2.54-potaliya-sutta.md)
-
 * [Kukkuravatika Sutta](./2.2.57-kukkuravatika-sutta.md)
-
 * [Abhaya Sutta](./2.2.58-abhaya-sutta.md)
-
 * [Apannaka  Sutta](./2.2.60-apannaka-sutta.md)
-
 * [Ambalatthika-rahulovada Sutta](./2.2.61-ambalatthika-rahulovada-sutta.md)
-
 * [Maha-Rahulovada Sutta](./2.2.62-maha-rahulovada-sutta.md)
-
 * [Cula-Malunkyovada Sutta](./2.2.63-cula-malunkyovada-sutta.md)
-
 * [Latukikopama Sutta](./2.2.66-latukikopama-sutta.md)
-
 * [Kitagiri Sutta](./2.2.70-kitagiri-sutta.md)
-
 * [Aggi-Vacchagotta Sutta](./2.2.72-aggi-vacchagotta-sutta.md)
-
 * [Dighanaka Sutta](./2.2.74-dighanaka-sutta.md)
-
 * [Magandiya Sutta](./2.2.75-magandiya-sutta.md)
-
 * [Samana-Mundika Sutta](./2.2.78-samana-mundika-sutta.md)
-
 * [Ratthapala Sutta](./2.2.82-ratthapala-sutta.md)
-
 * [Angulimala Sutta](./2.2.86-angulimala-sutta.md)
-
 * [Piyajatika Sutta](./2.2.87-piyajatika-sutta.md)
-
 * [Kannakatthala Sutta](./2.2.90-kannakatthala-sutta.md)
-
 * [Assalayana Sutta](./2.2.93-assalayana-sutta.md)
-
 * [Dhanañjani Sutta](./2.2.97-dhana-jani-sutta.md)
-
 * [Devadaha Sutta](./2.2.101-devadaha-sutta.md)
-
 * [Pañcattaya Sutta](./2.2.102-pa-cattaya-sutta.md)
-
 * [Sunakkhatta Sutta](./2.2.105-sunakkhatta-sutta.md)
-
 * [Aneñja-sappaya Sutta](./2.2.106-ane-ja-sappaya-sutta.md)
-
 * [Ganakamoggallana Sutta](./2.2.107-ganakamoggallana-sutta.md)
-
 * [Gopaka Moggallana Sutta](./2.2.108-gopaka-moggallana-sutta.md)
-
 * [Maha-punnama Sutta](./2.2.109-maha-punnama-sutta.md)
-
 * [Cula-punnama Sutta](./2.2.110-cula-punnama-sutta.md)
-
 * [Anupada Sutta](./2.2.111-anupada-sutta.md)
-
 * [Sappurisa Sutta](./2.2.113-sappurisa-sutta.md)
-
 * [Isigili Sutta](./2.2.116-isigili-sutta.md)
-
 * [Maha-cattarisaka Sutta](./2.2.117-maha-cattarisaka-sutta.md)
-
 * [Anapanasati Sutta](./2.2.118-anapanasati-sutta.md)
-
 * [Kayagata-sati Sutta](./2.2.119-kayagata-sati-sutta.md)
-
 * [Cula-suññata Sutta](./2.2.121-cula-su-ata-sutta.md)
-
 * [Maha-suññata Sutta](./2.2.122-maha-su-ata-sutta.md)
-
 * [Acchariy’abbhūtadhamma Sutta](./2.2.123-acchariy-abbh-tadhamma-sutta.md)
-
 * [Dantabhumi Sutta](./2.2.125-dantabhumi-sutta.md)
-
 * [Bhumija Sutta](./2.2.126-bhumija-sutta.md)
-
 * [Devaduta Sutta](./2.2.130-devaduta-sutta.md)
-
 * [Bhaddekaratta Sutta](./2.2.131-bhaddekaratta-sutta.md)
-
 * [Salayatana-vibhanga Sutta](./2.2.137-salayatana-vibhanga-sutta.md)
-
 * [Uddesa-vibhanga Sutta](./2.2.138-uddesa-vibhanga-sutta.md)
-
 * [Dhatu-vibhanga Sutta](./2.2.140-dhatu-vibhanga-sutta.md)
-
 * [Anathapindikovada Sutta](./2.2.143-anathapindikovada-sutta.md)
-
 * [Nandakovada Sutta](./2.2.146-nandakovada-sutta.md)
-
 * [Cula-Rahulovada Sutta](./2.2.147-cula-rahulovada-sutta.md)
-
 * [Chachakka Sutta](./2.2.148-chachakka-sutta.md)
-
 * [Maha-salayatanika Sutta](./2.2.149-maha-salayatanika-sutta.md)
-
 * [Indriya-bhavana Sutta](./2.2.152-indriya-bhavana-sutta.md)
