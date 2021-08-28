@@ -83,7 +83,7 @@ def build():
                 file_sutta_only = f'{sutta_id}-{sutta_name_kebab}.md'
                 file_sutta = f'{dir_nikaya}/{file_sutta_only}'
 
-                sutta_content = parse.parse_sutta(sutta_link)
+                sutta_content = parse.parse_sutta(sutta_id, sutta_name_kebab, sutta_link)
 
                 sutta_summary = sutta['summary']
                 content = '\n\n'.join(
@@ -92,7 +92,7 @@ def build():
                         f'*{sutta_summary}*',
                         f'Source: [{sutta_link}]({sutta_link})',
                                                 '---',
-                        '*%s*' % sutta_content['author'],
+                        '*Translated by %s*' % sutta_content['author'],
                     ]
                     + ['### Preface']
                     + sutta_content['preface_lines']

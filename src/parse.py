@@ -1,7 +1,7 @@
 import re
 import json
 from bs4 import BeautifulSoup
-from utils import www
+from utils import www, jsonx
 from utils.cache import cache
 
 URL_ROOT = 'https://www.accesstoinsight.org/tipitaka/mn/'
@@ -10,7 +10,7 @@ REGEX_TITLE = r'\w{1}N (?P<num_str>\d+):\s(?P<title_str>.+)\s—\s(?P<title_desc
 
 
 @cache('tripitaka', 86400)
-def parse_sutta(html_url):
+def parse_sutta(sutta_id, sutta_name_kebab, html_url):
     html = www.read(html_url)
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -39,11 +39,14 @@ def parse_sutta(html_url):
     if div_author:
         author = div_author.text
 
-    return {
+    sutta = {
         'author': author,
         'preface_lines': preface_lines,
         'chapter_lines': chapter_lines,
     }
+    sutta_file = f'data/suttas/{sutta_id}-{sutta_name_kebab}.json'
+    jsonx.write(sutta_file, sutta)
+    return sutta
 
 
 def parse_metadata(html_url, parent_id):
