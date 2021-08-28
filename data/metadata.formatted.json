@@ -110,6 +110,32 @@
               "name": "Patika Vagga",
               "id": "2.1.3",
               "description": "The Patika Division",
+              "suttas": [
+                {
+                  "name": "Cakkavatti Sutta",
+                  "id": "2.1.3.3",
+                  "description": "The Wheel-turning Emperor. In this excerpt the Buddha explains how skillful action can result in the best kind of long life, the best kind of beauty, the best kind of happiness, and the best kind of strength.",
+                  "link": "https://www.dhammatalks.org/suttas/DN/DN26.html"
+                },
+                {
+                  "name": "P\u0101s\u0101dika Sutta",
+                  "id": "2.1.3.6",
+                  "description": "The Inspiring Discourse. Toward the end of his life, the Buddha describes his accomplishment in establishing, through the Dhamma and Vinaya, a complete holy life that will endure after his passing. Listing some of the criticisms that might be leveled against him and his Dhamma-Vinaya, he shows how those criticisms should be refuted. ",
+                  "link": "https://www.dhammatalks.org/suttas/DN/DN29.html"
+                },
+                {
+                  "name": "Sigalovada Sutta",
+                  "id": "2.1.3.8",
+                  "description": "Sigalovada Sutta \u2014 The Buddha's Advice to Sigalaka/The Discourse to Sigala. The householder's code of discipline, as described by the Buddha to the layman Sigala. This sutta offers valuable practical advice for householders on how to conduct themselves skillfully in their relationships with parents, spouses, children, pupils, teachers, employers, employees, friends, and spiritual mentors so as to bring happiness to all concerned.",
+                  "link": ""
+                },
+                {
+                  "name": "Atanatiya Sutta",
+                  "id": "2.1.3.9",
+                  "description": "Discourse on Atanatiya. One of the \"protective verses\" (paritta) that are chanted to this day for ceremonial purposes by Theravada monks and nuns around the world. See Piyadassi Thera's The Book of Protection.",
+                  "link": "https://www.accesstoinsight.org/tipitaka/dn/dn.32.0.piya.html"
+                }
+              ],
               "source": "https://www.accesstoinsight.org/tipitaka/dn/index.html"
             }
           ]
