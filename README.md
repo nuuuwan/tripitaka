@@ -12,3 +12,4 @@
   * Added docs
   * Changed summary.md to README.md
   * Changed summary.md to README.md - docs
+  * Updated docs

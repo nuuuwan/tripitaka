@@ -41,7 +41,7 @@ def build():
             os.system(f'mkdir {dir_nikaya}')
 
             pitaka_lines.append(
-                f'* {nikaya_id} - [{nikaya_name}]({dir_nikaya})',
+                f'* {nikaya_id} - [{nikaya_name}](./{dir_nikaya_only})',
             )
 
             nikaya_link = nikaya.get('link', '')
@@ -82,10 +82,10 @@ def build():
                 filex.write(file_sutta, content)
 
                 nikaya_lines.append(
-                    f'*  {sutta_id} - [{sutta_name}]({file_sutta})',
+                    f'*  {sutta_id} - [{sutta_name}](./{file_sutta_only})',
                 )
                 pitaka_lines.append(
-                    f'  *  {sutta_id} - [{sutta_name}]({file_sutta})',
+                    f'  *  {sutta_id} - [{sutta_name}](./{file_sutta_only})',
                 )
 
             filex.write(nikaya_summary_file, '\n'.join(nikaya_lines))
