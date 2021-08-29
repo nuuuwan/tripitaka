@@ -8,6 +8,25 @@ DEFAULT_SOURCE = 'https://www.accesstoinsight.org/tipitaka'
 log = logging.getLogger('tripitaka')
 log.setLevel(logging.INFO)
 
+def render_line(line):
+    tag = line['tag']
+    text = line['text']
+
+    if tag == 'h1':
+        return f'# {text}'
+    if tag == 'h2':
+        return f'## {text}'
+    if tag == 'h3':
+        return f'### {text}'
+    if tag == 'h4':
+        return f'#### {text}'
+
+    return text
+
+def render_lines(lines):
+    return list(map(render_line, lines))
+
+
 def build():
     _metadata = metadata.load()
     os.system('rm -rf docs; mkdir docs')
@@ -94,10 +113,8 @@ def build():
                                                 '---',
                         '*Translated by %s*' % sutta_content['author'],
                     ]
-                    + ['### Preface']
-                    + sutta_content['preface_lines']
-                    + ['### Chapter']
-                    + sutta_content['chapter_lines'],
+                    + render_lines(sutta_content['preface_lines'])
+                    + render_lines(sutta_content['chapter_lines']),
                 )
                 filex.write(file_sutta, content)
 

@@ -30,3 +30,4 @@
   * Added data/suttas
   * Modified sutta read
   * Refactor sutta
+  * Fixed tag bug

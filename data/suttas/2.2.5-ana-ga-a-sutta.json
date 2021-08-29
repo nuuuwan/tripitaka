@@ -2,10 +2,13 @@
   "author": "",
   "preface_lines": [],
   "chapter_lines": [
-    "Where would you like to go next?",
-    "Home page",
-    "| Help page",
-    "| Site map",
-    "| Nibbana"
+    {
+      "tag": "h2",
+      "text": "Where would you like to go next?"
+    },
+    {
+      "tag": "p",
+      "text": "\nHome page\n| Help page\n| Site map\n| Nibbana\n"
+    }
   ]
 }

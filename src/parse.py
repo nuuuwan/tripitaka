@@ -1,6 +1,9 @@
 import re
 import json
+import os
 from bs4 import BeautifulSoup
+from bs4.element import NavigableString
+
 from utils import www, jsonx
 from utils.cache import cache
 
@@ -9,7 +12,49 @@ URL_ROOT = 'https://www.accesstoinsight.org/tipitaka/mn/'
 REGEX_TITLE = r'\w{1}N (?P<num_str>\d+):\s(?P<title_str>.+)\s—\s(?P<title_description_str>.+)'
 
 
-@cache('tripitaka', 86400)
+
+def clean_line(line):
+    tag = line['tag']
+    text = line['text'].strip()
+
+    if text == "Notes":
+        line['tag'] = 'h1'
+    return line
+
+def parse_div(div):
+    if not div:
+        return []
+    lines = []
+    for child in div:
+        if child.name == 'div':
+            lines += parse_div(child)
+        else:
+            if isinstance(child, NavigableString):
+                lines.append(dict(
+                    tag='string',
+                    text=str(child),
+                ))
+            else:
+                lines.append(dict(
+                    tag=child.name,
+                    text=child.text,
+                ))
+
+    lines = list(map(
+        clean_line,
+        lines,
+    ))
+
+    lines = list(filter(
+        lambda line: len(line['text'].strip()) != 0,
+        lines,
+    ))
+
+
+    return lines
+
+
+# @cache('tripitaka', 86400)
 def parse_sutta(sutta_id, sutta_name_kebab, html_url):
     sutta_file = f'data/suttas/{sutta_id}-{sutta_name_kebab}.json'
     if os.path.exists(sutta_file):
@@ -20,24 +65,10 @@ def parse_sutta(sutta_id, sutta_name_kebab, html_url):
     soup = BeautifulSoup(html, 'html.parser')
 
     div_preface = soup.find('div', class_="preface")
-    preface_lines = []
-    if div_preface:
-        preface_lines = list(
-            filter(
-                lambda line: len(line.strip()) > 0,
-                div_preface.text.split('\n'),
-            )
-        )
+    preface_lines = parse_div(div_preface)
 
     div_chapter = soup.find('div', class_="chapter")
-    chapter_lines = []
-    if div_chapter:
-        chapter_lines = list(
-            filter(
-                lambda line: len(line.strip()) > 0,
-                div_chapter.text.split('\n'),
-            )
-        )
+    chapter_lines = parse_div(div_chapter)
 
     div_author = soup.find('div', {'id': 'H_docAuthor'})
     author = ''
@@ -91,6 +122,8 @@ def parse_metadata(html_url, parent_id):
 if __name__ == '__main__':
     print(
         parse_sutta(
-            'https://www.accesstoinsight.org/tipitaka/dn/dn.02.0.than.html'
+            '2.2.1',
+            'mulapariyaya-sutta',
+            'https://www.accesstoinsight.org/tipitaka/mn/mn.001.than.html'
         )
     )
