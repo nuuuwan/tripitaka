@@ -29,3 +29,4 @@
   * Fixed line issue
   * Added data/suttas
   * Modified sutta read
+  * Refactor sutta

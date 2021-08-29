@@ -44,11 +44,11 @@ def parse_sutta(sutta_id, sutta_name_kebab, html_url):
     if div_author:
         author = div_author.text
 
-    sutta = {
-        'author': author,
-        'preface_lines': preface_lines,
-        'chapter_lines': chapter_lines,
-    }
+    sutta = dict(
+        author=author,
+        preface_lines=preface_lines,
+        chapter_lines=chapter_lines,
+    )
     jsonx.write(sutta_file, sutta)
     return sutta
 
