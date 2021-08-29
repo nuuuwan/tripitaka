@@ -31,3 +31,4 @@
   * Modified sutta read
   * Refactor sutta
   * Fixed tag bug
+  * minor formatting

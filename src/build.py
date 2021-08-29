@@ -114,6 +114,7 @@ def build():
                         '*Translated by %s*' % sutta_content['author'],
                     ]
                     + render_lines(sutta_content['preface_lines'])
+                    + ['---']
                     + render_lines(sutta_content['chapter_lines']),
                 )
                 filex.write(file_sutta, content)
