@@ -11,6 +11,11 @@ REGEX_TITLE = r'\w{1}N (?P<num_str>\d+):\s(?P<title_str>.+)\s—\s(?P<title_desc
 
 @cache('tripitaka', 86400)
 def parse_sutta(sutta_id, sutta_name_kebab, html_url):
+    sutta_file = f'data/suttas/{sutta_id}-{sutta_name_kebab}.json'
+    if os.path.exists(sutta_file):
+        sutta = jsonx.read(sutta_file)
+        return sutta
+
     html = www.read(html_url)
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -44,7 +49,6 @@ def parse_sutta(sutta_id, sutta_name_kebab, html_url):
         'preface_lines': preface_lines,
         'chapter_lines': chapter_lines,
     }
-    sutta_file = f'data/suttas/{sutta_id}-{sutta_name_kebab}.json'
     jsonx.write(sutta_file, sutta)
     return sutta
 
@@ -85,10 +89,6 @@ def parse_metadata(html_url, parent_id):
 
 
 if __name__ == '__main__':
-    # parse_metadata(
-    #     'https://www.accesstoinsight.org/tipitaka/dn/index.html',
-    #     '2.1',
-    # )
     print(
         parse_sutta(
             'https://www.accesstoinsight.org/tipitaka/dn/dn.02.0.than.html'
