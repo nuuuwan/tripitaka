@@ -5,21 +5,20 @@ from bs4 import BeautifulSoup
 from bs4.element import NavigableString
 
 from utils import www, jsonx
-from utils.cache import cache
 
 URL_ROOT = 'https://www.accesstoinsight.org/tipitaka/mn/'
 
 REGEX_TITLE = r'\w{1}N (?P<num_str>\d+):\s(?P<title_str>.+)\s—\s(?P<title_description_str>.+)'
 
 
-
 def clean_line(line):
-    tag = line['tag']
+    line['tag']
     text = line['text'].strip()
 
     if text == "Notes":
         line['tag'] = 'h1'
     return line
+
 
 def parse_div(div):
     if not div:
@@ -30,26 +29,33 @@ def parse_div(div):
             lines += parse_div(child)
         else:
             if isinstance(child, NavigableString):
-                lines.append(dict(
-                    tag='string',
-                    text=str(child),
-                ))
+                lines.append(
+                    dict(
+                        tag='string',
+                        text=str(child),
+                    )
+                )
             else:
-                lines.append(dict(
-                    tag=child.name,
-                    text=child.text,
-                ))
+                lines.append(
+                    dict(
+                        tag=child.name,
+                        text=child.text,
+                    )
+                )
 
-    lines = list(map(
-        clean_line,
-        lines,
-    ))
+    lines = list(
+        map(
+            clean_line,
+            lines,
+        )
+    )
 
-    lines = list(filter(
-        lambda line: len(line['text'].strip()) != 0,
-        lines,
-    ))
-
+    lines = list(
+        filter(
+            lambda line: len(line['text'].strip()) != 0,
+            lines,
+        )
+    )
 
     return lines
 
@@ -124,6 +130,6 @@ if __name__ == '__main__':
         parse_sutta(
             '2.2.1',
             'mulapariyaya-sutta',
-            'https://www.accesstoinsight.org/tipitaka/mn/mn.001.than.html'
+            'https://www.accesstoinsight.org/tipitaka/mn/mn.001.than.html',
         )
     )

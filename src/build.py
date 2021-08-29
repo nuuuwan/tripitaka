@@ -8,6 +8,7 @@ DEFAULT_SOURCE = 'https://www.accesstoinsight.org/tipitaka'
 log = logging.getLogger('tripitaka')
 log.setLevel(logging.INFO)
 
+
 def render_line(line):
     tag = line['tag']
     text = line['text']
@@ -22,6 +23,7 @@ def render_line(line):
         return f'#### {text}'
 
     return text
+
 
 def render_lines(lines):
     return list(map(render_line, lines))
@@ -102,7 +104,9 @@ def build():
                 file_sutta_only = f'{sutta_id}-{sutta_name_kebab}.md'
                 file_sutta = f'{dir_nikaya}/{file_sutta_only}'
 
-                sutta_content = parse.parse_sutta(sutta_id, sutta_name_kebab, sutta_link)
+                sutta_content = parse.parse_sutta(
+                    sutta_id, sutta_name_kebab, sutta_link
+                )
 
                 sutta_summary = sutta['summary']
                 content = '\n\n'.join(
@@ -110,7 +114,7 @@ def build():
                         f'# {sutta_name}',
                         f'*{sutta_summary}*',
                         f'Source: [{sutta_link}]({sutta_link})',
-                                                '---',
+                        '---',
                         '*Translated by %s*' % sutta_content['author'],
                     ]
                     + render_lines(sutta_content['preface_lines'])

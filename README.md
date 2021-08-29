@@ -32,3 +32,4 @@
   * Refactor sutta
   * Fixed tag bug
   * minor formatting
+  * Lint
